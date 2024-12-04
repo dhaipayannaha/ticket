@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+  <!-- daisy UI and Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="font-poppins">
+
+  <main>
+    <section id="mainSection" class="">
+      <section class="px-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn">
+              <span class="brand-color">Bus</span>
+              <img src="images/bus-icon.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="min-h-screen bg-[#FFFFFF] bg-[url(images/banner.png)] bg-no-repeat bg-center flex items-center justify-center text-center mb-10 ">
+        <div class="text-center space-y-4">
+          <h1 class="text-5xl font-bold text-white pb-6">
+            End-to-End Travel with <br><span class="brand-color mt-4">P Paribahan</span>
+          </h1>
+          <p class="text-white max-w-lg mx-auto pb-5">
+            Yes, you can run unit tests and view the results directly within the app. The integrated testing
+            features allow for a streamlined experience.
+          </p>
+          <button class="px-6 py-3 bg-[#1DD100] font-bold rounded-lg hover:bg-[#1DD100]">
+            Buy Tickets
+          </button>
+        </div>
+      </section>
+
+      <section class=" flex flex-row px-3">
+
+        <section class="w-full flex-grow bg-zinc-200 flex items-center justify-center p-8 rounded-s-3xl">
+          <div class="flex w-full max-w-2xl text-zinc-50 h-64">
+            <div class="h-full bg-zinc-900 flex items-center justify-center px-5 rounded-l-3xl">
+              <div flex>
+                <span class="text-3xl font-bold pb-3 mb-10">15% Off</span>
+                <span class="text-2xl font-bold rounded-full bg-lime-400 h-5 mt-10 p-2">Couple20</span>
+              </div>
+
+            </div>
+            <div
+              class="relative h-full flex flex-col items-center border-dashed justify-between border-2 bg-zinc-900 border-zinc-50">
+              <div class="absolute rounded-full w-8 h-8 bg-zinc-200 -top-5"></div>
+              <div class="absolute rounded-full w-8 h-8 bg-zinc-200 -bottom-5"></div>
+            </div>
+            <div class="h-full py-8 px-10 bg-zinc-900 flex-grow rounded-r-3xl flex flex-col">
+              <div class="flex w-full justify-between items-center">
+                <div class="flex flex-col items-center">
+                  <span class="text-4xl font-bold">BNE</span>
+                  <span class="text-zinc-500 text-sm">Brisbane</span>
+                </div>
+                <div class="flex flex-col flex-grow items-center px-10">
+                  <span class="font-bold text-xs">RS 11</span>
+                  <div class="w-full flex items-center mt-2">
+                    <div class="w-3 h-3 rounded-full border-2 border-zinc-900"></div>
+                    <div class="flex-grow border-t-2 border-zinc-400 border-dotted h-px"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                      class="w-5 h-5 mx-2">
+                      <path
+                        d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z" />
+                    </svg>
+                    <div class="flex-grow border-t-2 border-zinc-400 border-dotted h-px"></div>
+                    <div class="w-3 h-3 rounded-full border-2 border-zinc-900"></div>
+                  </div>
+
+                </div>
+
+                <div>
+                  <span> per seat</span>
+                </div>
+              </div>
+              <div class="flex w-full mt-auto justify-between">
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Date</span>
+                  <span class="font-mono">09/06/2023</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Departure</span>
+                  <span class="font-mono">17:45</span>
+                </div>
+
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Gate/Seat</span>
+                  <span class="font-mono">AC_Business</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full flex-grow bg-zinc-200 flex items-center justify-center p-8  rounded-e-3xl">
+          <div class="flex w-full max-w-2xl text-zinc-900 h-64">
+            <div class="h-full bg-zinc-100 flex items-center justify-center px-8 rounded-l-3xl">
+              <div flex>
+                <span class="text-3xl font-bold pb-3 mb-10">15% Off</span>
+                <span class="text-2xl font-bold rounded-full bg-lime-400 h-5 mt-10 p-2">NEWS15</span>
+              </div>
+
+            </div>
+            <div
+              class="relative h-full flex flex-col items-center border-dashed justify-between border-2 bg-zinc-900 border-zinc-50">
+              <div class="absolute rounded-full w-8 h-8 bg-zinc-200 -top-5"></div>
+              <div class="absolute rounded-full w-8 h-8 bg-zinc-200 -bottom-5"></div>
+            </div>
+            <div class="h-full py-8 px-10 bg-zinc-100 flex-grow rounded-r-3xl flex flex-col">
+              <div class="flex w-full justify-between items-center">
+                <div class="flex flex-col items-center">
+                  <span class="text-4xl font-bold">BNE</span>
+                  <span class="text-zinc-500 text-sm">Brisbane</span>
+                </div>
+                <div class="flex flex-col flex-grow items-center px-10">
+                  <span class="font-bold text-xs">RS 11</span>
+                  <div class="w-full flex items-center mt-2">
+                    <div class="w-3 h-3 rounded-full border-2 border-zinc-900"></div>
+                    <div class="flex-grow border-t-2 border-zinc-400 border-dotted h-px"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                      class="w-5 h-5 mx-2">
+                      <path
+                        d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z" />
+                    </svg>
+                    <div class="flex-grow border-t-2 border-zinc-400 border-dotted h-px"></div>
+                    <div class="w-3 h-3 rounded-full border-2 border-zinc-900"></div>
+                  </div>
+
+                </div>
+                <div class="flex flex-col items-center">
+                  <span class="text-4xl font-bold">ATH</span>
+                  <span class="text-zinc-500 text-sm">Athens</span>
+                </div>
+              </div>
+              <div class="flex w-full mt-auto justify-between">
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Date</span>
+                  <span class="font-mono">09/06/2023</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Departure</span>
+                  <span class="font-mono">17:45</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Passenger</span>
+                  <span class="font-mono">Rob Stinson</span>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-xs text-zinc-400">Gate/Seat</span>
+                  <span class="font-mono">A11/21C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="mt-10 mb-10">
+        <div class="flex justify-between">
+          <div class="card shadow-xl mt-10 ms-10 w-auto">
+            <div class="card-body">
+              <div class="flex justify-between mb-3">
+                <h2 class="card-title pb-5">Select Your Seat!</h2>
+                <button class="btn bg-green-100">
+                  <img src="images/bus-icon.png" alt="">
+                  <span class="brand-color">40 Seats Left</span>
+                </button>
+              </div>
+
+
+              <div class="flex justify-between pb-5">
+                <button class="btn bg-gray-100">
+                  <img src="images/seat-gray.png" alt="">
+                  <span class="">Available</span>
+                </button>
+                <button class="btn bg-green-100">
+                  <img src="images/seat-green.png" alt="">
+                  <span class="brand-color">Selected</span>
+                </button>
+              </div>
+              <ul class="flex justify-end mb-3">
+
+                <li class="px-8 py-2 bg-gray-100 mr-3  rounded-xl"><img src="images/tabler-icon-steering-wheel.svg"
+                    alt=""></li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">A</li>
+                <li onclick="pressed('A1')" id="A1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">A1</li>
+                <li onclick="pressed('A2')" id="A2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">A2</li>
+                <li onclick="pressed('A3')" id="A3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">A3</li>
+                <li onclick="pressed('A4')" id="A4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">A4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">B</li>
+                <li onclick="pressed('B1')" id="B1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">B1</li>
+                <li onclick="pressed('B2')" id="B2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">B2</li>
+                <li onclick="pressed('B3')" id="B3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">B3</li>
+                <li onclick="pressed('B4')" id="B4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">B4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">C</li>
+                <li onclick="pressed('C1')" id="C1" id="C1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">C1</li>
+                <li onclick="pressed('C2')" id="C2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">C2</li>
+                <li onclick="pressed('C3')" id="C3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">C3</li>
+                <li onclick="pressed('C4')" id="C4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">C4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">D</li>
+                <li onclick="pressed('D1')" id="D1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">D1</li>
+                <li onclick="pressed('D2')" id="D2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">D2</li>
+                <li onclick="pressed('D3')" id="D3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">D3</li>
+                <li onclick="pressed('D4')" id="D4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">D4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">E</li>
+                <li onclick="pressed('E1')" id="E1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">E1</li>
+                <li onclick="pressed('E2')" id="E2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">E2</li>
+                <li onclick="pressed('E3')" id="E3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">E3</li>
+                <li onclick="pressed('E4')" id="E4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">E4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">F</li>
+                <li onclick="pressed('F1')" id="F1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">F1</li>
+                <li onclick="pressed('F2')" id="F2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">F2</li>
+                <li onclick="pressed('F3')" id="F3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">F3</li>
+                <li onclick="pressed('F4')" id="F4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">F4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">A</li>
+                <li onclick="pressed('G1')" id="G1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">G1</li>
+                <li onclick="pressed('G2')" id="G2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">G2</li>
+                <li onclick="pressed('G3')" id="G3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">G3</li>
+                <li onclick="pressed('G4')" id="G4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">G4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">H</li>
+                <li onclick="pressed('H1')" id="H1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">H1</li>
+                <li onclick="pressed('H2')" id="H2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">H2</li>
+                <li onclick="pressed('H3')" id="H3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">H3</li>
+                <li onclick="pressed('H4')" id="H4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">H4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">I</li>
+                <li onclick="pressed('I1')" id="I1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">I1</li>
+                <li onclick="pressed('I2')" id="I2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">I2</li>
+                <li onclick="pressed('I3')" id="I3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">I3</li>
+                <li onclick="pressed('I4')" id="I4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">I4</li>
+              </ul>
+              <ul class="flex justify-between mb-3">
+                <li class="py-2 mr-3">J</li>
+                <li onclick="pressed('J1')" id="J1" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">J1</li>
+                <li onclick="pressed('J2')" id="J2" class="px-8 py-2 bg-gray-100 mr-20  rounded-xl">J2</li>
+                <li onclick="pressed('J3')" id="J3" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">J3</li>
+                <li onclick="pressed('J4')" id="J4" class="px-8 py-2 bg-gray-100 mr-3  rounded-xl">J4</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="card shadow-xl mt-10 me-10 w-auto">
+            <div class="card-body">
+              <h2 class="card-title">Payment</h2>
+              <div class="card bg-gray-100 text-primary-content w-96">
+                <div id="" class="card-body">
+                  <ul class="flex justify-between">
+                    <li class="text-black font-bold">Seate</li>
+                    <li class="text-black font-bold">Class</li>
+                    <li class="text-black font-bold">Price</li>
+                  </ul>
+                  <div id="payment">
+
+
+                  </div>
+                  <hr>
+                  <ul class="flex justify-between">
+                    <li class="text-black font-bold">Total Price</li>
+                    <li id="total" class="text-black font-bold">0</li>
+                  </ul>
+                  <div class=" pt-5 pb-5">
+                    <label for="hs-trailing-button-add-on" class="sr-only">Label</label>
+                    <div class="flex rounded-lg shadow-sm">
+                      <input disabled type="text" id="copon" placeholder="Have any copupon!!"
+                        id="hs-trailing-button-add-on" name="hs-trailing-button-add-on"
+                        class="py-3 px-4 block w-full border-gray-200 shadow-sm rounded-s-lg text-sm focus:z-10 focus:border-green-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none  dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
+                      <button onclick="catched()" type="button"
+                        class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-transparent bg-green-500 text-white hover:bg-green-700 focus:outline-none focus:bg-green-700 disabled:opacity-50 disabled:pointer-events-none">
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="flex justify-between">
+                    <li class="text-black font-bold">Grand total</li>
+                    <li id="grandTotal" class="text-black font-bold">0</li>
+                  </ul>
+                  <button onclick="buy()" id="buy" class="btn bg-green-100 ">
+
+                    Buy Ticket
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+      </section>
+    </section>
+    <section  id="payment" class="hidden">
+      <section class="flex justify-center items-center h-screen ">
+        <div class="card bg-base-100  shadow-xl ">
+          <div class="card-body">
+            <img class="w-20 flex justify-center mx-auto pb-5" src="images/success.png" alt="">
+            <p class="font-bold text-center">Thank you for Booking Our Bus Seats.
+              <br>
+              We are working hard to find the best service and deals for you
+            </p>
+            <p class="text-center">Shortly you will find a confirmation in your email.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success text-white rounded-3xl mx-auto px-20">Continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
