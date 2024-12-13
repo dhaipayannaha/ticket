@@ -11,12 +11,22 @@
   .brand-color{
     color: #1DD100;
   }
-  .payment ul {
+  #priceList ul {
     display: flex;
     justify-content: space-between;
 }
+#priceList ul li {
+  color: black;
+}
 
 .disabled {
+  
   pointer-events: none;
   opacity: 0.5;
+  
+}
+
+#count-seat{
+  color: #6fc013;
+  font-size: medium;
 }
